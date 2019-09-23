@@ -1,5 +1,62 @@
+<html>
+<head>
+		
+	<title>CivSim</title>
+	<!-- <link rel="shortcut icon" href="Assets/Icon.ico"> -->
+	
+	<link href="style.css" type="text/css" rel="stylesheet">
+	
+	<!-- seeded random script -->
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/seedrandom/2.3.10/seedrandom.min.js"></script>
+	
+	<!-- CORE SCRIPTS -->
+	<script type="text/javascript" src="js/core/variables.js"></script>
+	<script type="text/javascript" src="js/core/init.js"></script>
+	<script type="text/javascript" src="js/core/control.js"></script>
+	<script type="text/javascript" src="js/core/chunkHandler.js"></script>
+	<script type="text/javascript" src="js/core/update.js"></script>
+	
+	<!-- COMPONENT SCRIPTS -->
+	<script type="text/javascript" src="js/component/variables.js"></script>
+	<script type="text/javascript" src="js/component/creator.js"></script>
+	
+	<!-- GUI SCRIPTS -->
+	<script type="text/javascript" src="js/gui/variables.js"></script>
+	<script type="text/javascript" src="js/gui/toolMenu.js"></script>
+	<script type="text/javascript" src="js/gui/update.js"></script>
+	<script type="text/javascript" src="js/gui/contextMenu.js"></script>
+	
+	<!-- GENERATOR SCRIPTS -->
+	<script type="text/javascript" src="js/generator/variables.js"></script>
+	<script type="text/javascript" src="js/generator/generateMap.js"></script>
+	
+</head>
 <body>
-<link href="style.css" type="text/css" rel="stylesheet">
-<script type="text/javascript" src="noiseAPI.js"></script>
-<script type="text/javascript" src="noise.js"></script>
+	<div id="selectionMenu">
+
+		<!-- TOOLS -->
+		<p id="SelectionMenuTitle">Tools</p>
+		<button id="btnSelect_pan" class="on" onClick="btnTool('pan')">Pan tool</button>
+		<p id="panDesc">Pan and zoom around the screen</p>
+		<button id="btnSelect_delete" class onClick="btnTool('delete')">Delete tool</button>
+		<p id="dltDesc">Delete elements on the screen</p>
+		<button id="btnSelect_zoom" class onClick="btnTool('zoom')">Zoom tool</button>
+		<p id="zoomDesc">A MultiTool to do different things</p>
+		<button id="btnSelect_multiTool" class onClick="btnTool('multiTool')">Multi tool</button>
+		<p id="multiToolDesc">A MultiTool to do different things</p>
+
+	</div>
+
+	<!-- Mouse over description -->
+	<div id="MouseDesc">
+		<p id="MouseDesc_Coords"></p>
+		<p id="MouseDesc_TileType"></p>
+	</div>
+	
+	<!-- Context Menu, buttons are added programatically -->
+	<div id="ContextMenu" style="visibility: hidden"></div>
+	
+	<!-- Extra Details -->
+	<div id="ExtraDetails">
+	</div>
 </body>

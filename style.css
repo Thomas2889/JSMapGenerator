@@ -1,0 +1,235 @@
+#main {
+    border:0px solid #d3d3d3;
+    background-color: #000000;
+}
+
+button:focus {outline: 0px;}
+
+
+
+#ContextMenu {
+	background-color: #DDDDDD;
+	position: absolute;
+	width: 200;
+	height: 10;
+}
+
+.ContextMenuButton {
+	width: 200;
+	border: none;
+	background-color: #DDDDDD;
+}
+
+.ContextMenuButton:hover {
+	background-color: #BBBBBB;
+}
+
+.ContextMenuSplitter {
+	background-color: #DDDDDD;
+	width: 200;
+	height: 10;
+	box-shadow: inset 5px -4px 0 #DDDDDD, inset -5px -4px 0 #DDDDDD, inset 0px -5px 0 #333333;
+}
+
+.ContextMenuSplitterText {
+	background-color: #DDDDDD;
+	color: black;
+	width: 200;
+	text-align: center;
+	height: 20;
+	box-shadow: inset 5px -4px 0 #DDDDDD, inset -5px -4px 0 #DDDDDD, inset 0px -5px 0 #333333;
+}
+
+
+
+#ExtraDetails {
+	/*background-color: red;*/
+	width: 550;
+	height: 300;
+	position: relative;
+	left: 700;
+	top: -200;
+}
+
+
+
+#MouseDesc {
+	background-color: #aaaaaa;
+	width: 700px;
+	height: 100px;
+	position: absolute;
+}
+
+/* SELECTION MENU STUFF */
+
+#selectionMenu {
+	width: 550px;
+	height: 500px;
+	position: absolute;
+	top: 8px;
+	left: 708px;
+	background-color: #cccccc;
+	overflow: auto;
+	
+}
+
+#SelectionMenuTitle {
+	background-color: #444444;
+	width: 50px;
+	text-align: center;
+	position: absolute;
+	left: 240px;
+	padding: 10px;
+	top: -10px;
+	border-radius: 10px;
+	color: white;
+}
+
+
+#btnSelect_Pan {
+	background-color: #000000;
+	color: white;
+	font-size: 16px;
+	border-radius: 10px 10px 0px 0px;
+	border: 0px;
+	width: 200px;
+	height: 25px;
+	position: absolute;
+	top: 50px;
+	left: 50px;
+	transition-duration: 0.5s;
+}
+
+#btnSelect_Pan:hover {
+	background-color: #FFFFFF;
+	color: black;
+}
+
+#btnSelect_Pan.on {
+	background-color: #FFFFFF;
+	color: black;
+}
+
+#panDesc {
+	background-color: #444444;
+	border-radius: 0px 0px 10px 10px;
+	color: white;
+	text-align: center;
+	width: 200px;
+	position: absolute;
+	margin: 0px;
+	top: 75px;
+	left: 50px;
+}
+
+
+#btnSelect_delete {
+	background-color: #000000;
+	color: white;
+	font-size: 16px;
+	border-radius: 10px 10px 0px 0px;
+	border: 0px;
+	width: 200px;
+	height: 25px;
+	position: absolute;
+	top: 50px;
+	left: 300px;
+	transition-duration: 0.5s;
+}
+
+#btnSelect_delete:hover {
+	background-color: #FF0000;
+	color: black;
+}
+
+#btnSelect_delete.on {
+	background-color: #FF0000;
+	color: black;
+}
+
+#dltDesc {
+	background-color: #444444;
+	border-radius: 0px 0px 10px 10px;
+	color: white;
+	text-align: center;
+	width: 200px;
+	position: absolute;
+	margin: 0px;
+	top: 75px;
+	left: 300px;
+}
+
+
+#btnSelect_zoom {
+	background-color: #000000;
+	color: white;
+	font-size: 16px;
+	border-radius: 10px 10px 0px 0px;
+	border: 0px;
+	width: 200px;
+	height: 25px;
+	position: absolute;
+	top: 125px;
+	left: 50px;
+	transition-duration: 0.5s;
+}
+
+#btnSelect_zoom:hover {
+	background-color: #FF0000;
+	color: black;
+}
+
+#btnSelect_zoom.on {
+	background-color: #FF0000;
+	color: black;
+}
+
+#zoomDesc {
+	background-color: #444444;
+	border-radius: 0px 0px 10px 10px;
+	color: white;
+	text-align: center;
+	width: 200px;
+	position: absolute;
+	margin: 0px;
+	top: 150px;
+	left: 50px;
+}
+
+
+
+#btnSelect_multiTool {
+	background-color: #000000;
+	color: white;
+	font-size: 16px;
+	border-radius: 10px 10px 0px 0px;
+	border: 0px;
+	width: 200px;
+	height: 25px;
+	position: absolute;
+	top: 125px;
+	left: 300px;
+	transition-duration: 0.5s;
+}
+
+#btnSelect_multiTool:hover {
+	background-color: #BBBBBB;
+	color: black;
+}
+
+#btnSelect_multiTool.on {
+	background-color: #BBBBBB;
+	color: black;
+}
+
+#multiToolDesc {
+	background-color: #444444;
+	border-radius: 0px 0px 10px 10px;
+	color: white;
+	text-align: center;
+	width: 200px;
+	position: absolute;
+	margin: 0px;
+	top: 150px;
+	left: 300px;
+}
